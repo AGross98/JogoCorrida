@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corrida de Carros</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Corrida de Carros</h1>
+        <div class="race-track">
+            <div class="car red" id="car1"></div>
+            <div class="car blue" id="car2"></div>
+            <div class="car green" id="car3"></div>
+            <div class="car yellow" id="car4"></div>
+            <div class="car orange" id="car5"></div>
+        </div>
+        <div class="controls">
+            <label for="betAmount">Valor da Aposta:</label>
+            <input type="number" id="betAmount" min="5" step="5">
+            <label for="carSelect">Escolha o carro:</label>
+            <select id="carSelect">
+                <option value="car1">Carro Vermelho</option>
+                <option value="car2">Carro Azul</option>
+                <option value="car3">Carro Verde</option>
+                <option value="car4">Carro Amarelo</option>
+                <option value="car5">Carro Laranja</option>
+            </select>
+            <button id="raceBtn">Correr!</button>
+        </div>
+        <div id="result"></div>
+        <div id="saldo">Saldo: 100 dinheiros</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
